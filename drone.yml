@@ -24,7 +24,7 @@ steps:
       from_secret: docker_password
     repo: ashiqummathoor/beta
     auto_tag: true
-    auto_tag_suffix:1
+    auto_tag_suffix: 1
 
 # deploy this image on ec2
 - name: deploy on docker
