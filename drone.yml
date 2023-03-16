@@ -13,5 +13,16 @@ steps:
     goals: 
     - clean 
     - install
+# build docker image from previous artificat
+- name: publish  
+  image: plugins/docker
+  settings:
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    repo: ashiqummathoor/beta
+    auto_tag: true
+    auto_tag_suffix: 1
 
 
