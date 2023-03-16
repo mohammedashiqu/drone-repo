@@ -3,6 +3,7 @@ kind: pipeline
 type: docker
 name: default
 
+##
 # build java war file from given repo
 - name: build-java-app
   image: docker.io/kameshsampath/drone-java-maven-plugin:v1.0.2
